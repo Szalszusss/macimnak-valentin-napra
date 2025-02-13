@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Macimnak<3</title>
+</head>
+
+
+<body>
+    <img src="../assets/BD314B70-2590-4BEB-9260-76194A64F1F7.jpeg" height="640px">
+    <a href="./bear.html"><div class="w"></div></a>
+    
+    
+    <style>
+        body{
+            margin: 50px 50px 0 50px;
+            display: flex;
+            flex-direction: column;
+            min-height: 95vh;
+            background-color: rgb(235, 157, 170);*/
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            margin: 0;
+        }
+        @keyframes scale{
+            from{
+                transform: scale(1) rotate(-45deg)
+            }
+            12.5%{
+                transform: scale(1.2) rotate(-45deg)
+            }
+            25%{
+                transform: scale(1) rotate(-45deg)
+            }
+            37.5%{
+            transform: scale(1.2) rotate(-45deg)
+            }
+            50%{
+                transform: scale(1) rotate(-45deg)
+            }
+            100%{
+                transform: scale(1) rotate(-45deg)
+            }
+        }
+
+        .w{
+        width: 70px;
+        height: 70px;
+        background-color: pink;
+        transform: rotate(-45deg);
+        animation-name: scale;
+        animation-iteration-count: infinite;
+        animation-duration: 0.8s;
+        margin: auto;
+
+        }
+        .w::before,
+        .w::after{
+        display: block;
+        content: "";
+        height: 70px;
+        width: 70px;
+        border-radius: 50%;
+        background-color: pink;
+        position: relative;
+        }
+        .w::before{
+        top: -35px;
+        }
+        .w::after{
+
+        left: 35px;
+        top: -70px;
+        }
+    </style>
+</body>
